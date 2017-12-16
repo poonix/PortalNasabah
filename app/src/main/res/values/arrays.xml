@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alamat_type">
+        <item>Pilih</item>
+        <item>Alamat KTP</item>
+        <item>Alamat Domisili</item>
+        <item>Alamat Tempat Usaha</item>
+    </string-array>
+
+    <string-array name="status_alamat">
+        <item>Status Alamat</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="prospek_type">
+        <item>Jenis Prospek</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="identitas">
+        <item>KTP</item>
+        <item>SIM</item>
+    </string-array>
+
+    <string-array name="t">
+        <item>Tanggal</item>
+    </string-array>
+
+    <string-array name="b">
+        <item>Bulan</item>
+    </string-array>
+
+    <string-array name="thn">
+        <item>Tahun</item>
+    </string-array>
+    <string-array name="jenis_usaha">
+        <item>Jenis Usaha</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="plafond">
+        <item>Plafond</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="rencana_plafond">
+        <item>Rencana Plafond</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="tujuan_pembiayaan">
+        <item>Pilih</item>
+        <item>Modal Kerja</item>
+        <item>Investasi</item>
+    </string-array>
+
+    <string-array name="lama_tahun">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="lama_bulan">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    </resources>

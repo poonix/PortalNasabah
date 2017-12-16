@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Portal Nasabah</string>
+    <string name="app_version">Version 1.0.1</string>
+    <string name="home_screen">PORTAL NASABAH</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="jadwal_angsuran">Jadwal Angsuran</string>
+    <string name="histori_angsuran">Histori Angsuran</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">CANCEL</string>
+    <string name="action_signin">Login</string>
+    <string name="action_filter">filter</string>
+    <string name="action_search">search</string>
+
+    <string name="tv_search_not_found">Data tidak ditemukan</string>
+    <string name="tv_data_pembiayaan">Data Pembiyaan Debitur</string>
+
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="action_ajukan_pinjaman">Ajukan Pinjaman</string>
+    <string name="tvHistoryPembiayaan">Histori Pembiayaan</string>
+    <string name="tvAngsuranPembiayaan">Angsuran Pembiayaan</string>
+    <string name="tvJumlahAngsuran">Jumlah Angsuran</string>
+    <string name="tvKolektibilitas">Kolektibilitas</string>
+    <string name="tvLogout">Logout</string>
+
+    <string name="tvIddebitur_labeling">Id Debitur :</string>
+    <string name="tvNoRek_labeling">No. Rekening :</string>
+    <string name="tvTerdaftar_labeling">Terdaftar di :</string>
+
+
+    <string name="tvTglRealisasi">Realisasi</string>
+    <string name="tvTglJthTempo">Jatuh Tempo</string>
+    <string name="tvTglLunas">Lunas</string>
+
+    <string name="tvTglTransaksi">Tanggal Transaksi:</string>
+    <string name="tvAngsuranKe">Angsuran Ke:</string>
+    <string name="tvPokokTrans">Pokok Transaksi:</string>
+    <string name="tvBungaTrans">Bunga Transaksi:</string>
+    <string name="tvTotalAngsuran">Total Angsuran:</string>
+    <string name="tvPokokDibayar">Pokok Dibayar:</string>
+    <string name="tvBungaDibayar">Bunga Dibayar:</string>
+    <string name="tvTotalBayar">Total Bayar:</string>
+    <string name="tvAngsuranPokok">Angsuran Pokok:</string>
+    <string name="tvAngsuranBunga">Angsuran Bunga:</string>
+    <string name="tvTotalOS">Total OS:</string>
+    <string name="tvPokokOS">Pokok OS:</string>
+    <string name="tvBungaOs">Bunga OS:</string>
+    <string name="tvKeterangan">Keterangan:</string>
+
+    <string name="tvTitleMengajukanPinjaman">Bagaimana cara mengajukan pinjaman?</string>
+    <string name="tvDescriptionMengajukanPinjaman">Khusus bagi anda yang belum menjadi debitur di PNM, silahkan ajukan pinjaman dengan menekan tombol dibawah ini</string>
+    <string name="action_lokasi_kantor">Lokasi Kantor</string>
+
+    <string name="dummy_kantorCabang">Kantor Cabang</string>
+    <string name="dummy_telp">(021) 2511404</string>
+    <string name="dummy_loremipsum">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an</string>
+    <string name="label_alamat">Alamat :</string>
+    <string name="label_phone">Telepon :</string>
+    <string name="dummy_short">Lorem Ipsum</string>
+    <string name="dummy_char">45</string>
+    <string name="dummy_date">12/12/2017</string>
+    <string name="dummy_price">Rp. 10.000.000,-</string>
+
+
+    <string name="save_data_failed">Data tidak berhasil disimpan</string>
+    <string name="save_data_failed_on_server">Data tidak berhasil disimpan!</string>
+    <string name="HubungiKami">Hubungi Kami</string>
+
+    <string name="open_drawer">Open Navigation Drawer</string>
+    <string name="close_drawer">Close Navigation Drawer</string>
+
+    <string name="field_err_msg">%1$s harus diisi</string>
+</resources>

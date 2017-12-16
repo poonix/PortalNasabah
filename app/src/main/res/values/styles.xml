@@ -1,0 +1,78 @@
+<resources >
+    <!-- Base application theme. -->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!-- Customize your theme here. -->
+        <!-- <item name="android:background">@android:color/transparent</item> -->
+        <item name="colorPrimary">@color/app_background_jenius</item>
+        <item name="colorPrimaryDark">@color/app_bar_jenius</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyNoActionBarShadowTheme" parent="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="AppTheme.NavigationView">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:listDivider">@color/grey_light</item>
+        <item name="android:textColorSecondary">@color/grey_text</item>
+        <item name="listPreferredItemPaddingRight">50dp</item>
+        <item name="android:alignmentMode">alignMargins</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme.NoActionBar">
+        <!--
+        <item name="android:windowBackground">@drawable/ic_pnm</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">40dp</item>
+        -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="MyEditTextTheme">
+        <!-- Used for the bottom line when not selected / focused -->
+        <item name="colorControlNormal">#67A2CF</item>
+        <!-- colorControlActivated & colorControlHighlight use the colorAccent color by default -->
+    </style>
+
+    <style name="RobotoRegular">
+        <item name="typeface">Roboto-Regular.ttf</item>
+    </style>
+
+    <style name="RobotoMedium">
+        <item name="typeface">Roboto-Medium.ttf</item>
+    </style>
+
+    <style name="RobotoBold">
+        <item name="typeface">Roboto-Bold.ttf</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- remove shadow below action bar -->
+        <!-- <item name="android:elevation">0dp</item> -->
+        <!-- Support library compatibility -->
+        <item name="elevation">0dp</item>
+    </style>
+
+</resources>

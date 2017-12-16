@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_splashscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".ui.activity.SplashscreenActivity"
+    >
+
+    <ImageView
+        android:id="@+id/ivBgView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bg_1" />
+
+    <ImageView
+        android:id="@+id/ivLogoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="70dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/ic_pnm" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLogoView"
+        android:layout_marginTop="-60dp"
+        >
+
+        <TextView
+            style="@style/RobotoRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_version"
+            android:textColor="#424242"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1565C0</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorAccent">#303F9F</color>
+
+    <color name="grey_dark_more">#707070</color>
+    <color name="grey_dark">#7E7E7E</color>
+    <color name="grey_medium">#AEAEAE</color>
+    <color name="grey_light">#DFDFDF</color>
+    <color name="grey_light_more">#cbd1d5</color>
+    <color name="white_trans">#D0D0D0</color>
+
+    <color name="primary_text">#111111</color>
+    <color name="primary_text_inverse">#EFEFEF</color>
+    <color name="secondary_text">#571254</color>
+    <color name="secondary_text_inverse">#9AAAEF</color>
+    <color name="black_overlay_light">#22000000</color>
+    <color name="black_overlay">#55000000</color>
+    <color name="black_overlay_more">#99000000</color>
+    <color name="black_overlay_dark">#aa000000</color>
+    <color name="brown_overlay">#66985676</color>
+    <color name="menu_text_color">#ffffee</color>
+    <color name="blue_text">#303F9F</color>
+    <color name="black_text">#000000</color>
+    <color name="green_text">#12AC02</color>
+    <color name="yellow_text">#FFBB00</color>
+    <color name="red_text">#EE1221</color>
+    <color name="grey_text">#313131</color>
+    <color name="orange">#ffab12</color>
+    <color name="white">#ffffff</color>
+    <color name="light_green">#9CCC65</color>
+    <color name="pnm_green">#A4CC39</color>
+
+    <color name="tab_selected">#a6ce38</color>
+    <color name="tab_unselected">#dde1e4</color>
+    <color name="form_background">#f9f9f9</color>
+
+    <color name="field_survey_background">#E0E0E0</color>
+
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="view_divider_color">#BABABA</color>
+    <color name="view_divider_color_2">#DADADA</color>
+
+    <color name="app_background_jenius">#2091EB</color>
+    <color name="app_bar_jenius">#1771CB</color>
+
+    <color name="nav_header">#F0F0F0</color>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@color/nav_header"
+    android:gravity="bottom"
+    android:padding="35dp"
+    android:orientation="vertical"
+    >
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#1251a4"
+        android:paddingTop="30dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/img_profile_default"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/img_profile_default"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="@string/dummy_short"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/tv_id_debitur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="LB.000348"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="12sp"
+                android:textColor="@color/green_text"
+                android:textStyle="italic"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        app:srcCompat="@drawable/ic_pnm" />
+
+
+</LinearLayout>

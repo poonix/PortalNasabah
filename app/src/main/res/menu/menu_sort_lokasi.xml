@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.yudhi.sunshine.app.MainActivity">
+    <item
+        android:id="@+id/action_all"
+        android:orderInCategory="100"
+        android:title="ALL"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_barat"
+        android:orderInCategory="100"
+        android:title="Barat"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_timur"
+        android:orderInCategory="100"
+        android:title="Timur"
+        app:showAsAction="never" />
+</menu>

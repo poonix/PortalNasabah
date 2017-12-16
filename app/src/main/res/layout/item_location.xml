@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/div_bottom_b"
+        >
+
+        <View
+            android:id="@+id/div_top_blue_c"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_below="@+id/div_top_blue_c"
+            android:paddingLeft="95dp"
+            android:paddingRight="95dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/ivIconOffice"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:src="@drawable/office_icon"
+                />
+
+            <Button
+                style="@style/RobotoMedium"
+                android:id="@+id/btn_lokasi_kantor"
+                android:layout_width="50dp"
+                android:paddingLeft="2dp"
+                android:layout_weight="1"
+                android:paddingRight="2dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@null"
+                android:text="@string/action_lokasi_kantor"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
