@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +21,8 @@ import teknologi.azha.portaldebitur.controller.AngsuranPembiayaanController;
 import teknologi.azha.portaldebitur.model.AngsuranPembiayaanModel;
 import teknologi.azha.portaldebitur.ui.adapter.DetailJadwalAngsuranAdapter;
 import teknologi.azha.portaldebitur.ui.factory.DialogFactory;
+import teknologi.azha.portaldebitur.utils.DateUtil;
+import teknologi.azha.portaldebitur.utils.WidgetUtil;
 
 /**
  * Created by pooni on 10/1/2017.
@@ -33,8 +36,10 @@ public class JadwalAngsuranFragment extends android.support.v4.app.Fragment impl
     private RecyclerView recyclerView;
     private ProgressBar progressBar;
     private AngsuranPembiayaanController controller;
-    private String Norek;
+    private String Norek,Outstanding,JmlPinjaman,JmlAngsuran,PosisiCicilan,TglJatuhTempo,Kolektibilitas;
     private DetailJadwalAngsuranAdapter mAdapter;
+    DateUtil dt = new DateUtil();
+    TextView tvNorek,tvOutstanding,tvJmlPinjaman,tvJmlAngsuran,tvPosisiCicilan,tvTglJthTempo,tvKolektibilitas;
 
     private boolean isLoading = false;
 
@@ -61,10 +66,32 @@ public class JadwalAngsuranFragment extends android.support.v4.app.Fragment impl
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.list_item_angsuran, container, false);
-        progressBar = (ProgressBar) rootView.findViewById(R.id.progress_bar);
-        recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view);
-        Intent intent = getActivity().getIntent();
-        Norek  = intent.getStringExtra("norek");
+        progressBar     = (ProgressBar) rootView.findViewById(R.id.progress_bar);
+        recyclerView    = (RecyclerView) rootView.findViewById(R.id.recycler_view);
+        Intent intent   = getActivity().getIntent();
+        Norek           = intent.getStringExtra("norek");
+        JmlPinjaman     = intent.getStringExtra("JmlPinjaman");
+        JmlAngsuran     = intent.getStringExtra("JmlAngsuran");
+        Outstanding     = intent.getStringExtra("JmlOutstanding");
+        PosisiCicilan   = intent.getStringExtra("getJmlCicilan");
+        TglJatuhTempo   = intent.getStringExtra("TglJatuhTempo");
+        Kolektibilitas  = intent.getStringExtra("Kolektibilitas");
+
+        tvNorek         = (TextView) rootView.findViewById(R.id.tvNorek);
+        tvJmlAngsuran   = (TextView) rootView.findViewById(R.id.tvJumlah_angsuran);
+        tvJmlPinjaman   = (TextView) rootView.findViewById(R.id.tvJumlah_pinjaman);
+        tvOutstanding   = (TextView) rootView.findViewById(R.id.tvOutstanding);
+        tvPosisiCicilan = (TextView) rootView.findViewById(R.id.tvPosisi_cicilan);
+        tvTglJthTempo   = (TextView) rootView.findViewById(R.id.tvTanggalJatuhTempo);
+        tvKolektibilitas = (TextView) rootView.findViewById(R.id.tvKolektibilitas);
+
+        tvNorek.setText(Norek);
+        tvJmlPinjaman.setText(WidgetUtil.convertToLocalCurrency(JmlPinjaman));
+        tvJmlAngsuran.setText(WidgetUtil.convertToLocalCurrency(JmlAngsuran));
+        tvOutstanding.setText(WidgetUtil.convertToLocalCurrency(Outstanding));
+        tvPosisiCicilan.setText(PosisiCicilan);
+        tvTglJthTempo.setText(dt.convertDateToNormal(TglJatuhTempo));
+        tvKolektibilitas.setText(Kolektibilitas);
 
         return rootView;
     }

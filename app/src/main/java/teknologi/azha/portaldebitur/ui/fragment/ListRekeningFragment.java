@@ -54,7 +54,7 @@ public class ListRekeningFragment extends Fragment implements GetRekeningCallbac
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.list_item_angsuran, container, false);
+        View rootView = inflater.inflate(R.layout.list_item_rekening, container, false);
         progressBar = (ProgressBar) rootView.findViewById(R.id.progress_bar);
         recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view);
         tvMessage = (TextView) rootView.findViewById(R.id.tvMessage);

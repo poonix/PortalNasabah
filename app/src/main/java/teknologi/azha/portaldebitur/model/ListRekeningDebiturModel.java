@@ -22,13 +22,19 @@ public class ListRekeningDebiturModel implements Parcelable{
     private String NO_ALTERNATIF;
     @SerializedName("JML_PINJAMAN")
     @Expose
-    private Float JML_PINJAMAN;
+    private String JML_PINJAMAN;
     @SerializedName("JML_ANGSURAN")
     @Expose
     private int JML_ANGSURAN;
+    @SerializedName("OUTSTANDING")
+    @Expose
+    private String OUTSTANDING;
+    @SerializedName("POSISI_CICILAN_KE")
+    @Expose
+    private String POSISI_CICILAN_KE;
     @SerializedName("angsuran_total")
     @Expose
-    private Float angsuran_total;
+    private Double angsuran_total;
     @SerializedName("TGL_REALISASI")
     @Expose
     private TGL_REALISASI tgl_realisasi;
@@ -86,25 +92,43 @@ public class ListRekeningDebiturModel implements Parcelable{
         this.JML_ANGSURAN=JML_ANGSURAN;
     }
 
-    public Float getJmlPinjaman()
+    public String getPosisiCicilan()
+    {
+        return POSISI_CICILAN_KE;
+    }
+    public void setPosisiCicilan(String posisicicilan)
+    {
+        this.POSISI_CICILAN_KE=posisicicilan;
+    }
+
+    public String getJmlPinjaman()
     {
         return JML_PINJAMAN;
     }
-    public void setJmlPinjaman(Float JML_PINJAMAN)
+    public void setJmlPinjaman(String JML_PINJAMAN)
     {
         this.JML_PINJAMAN=JML_PINJAMAN;
     }
 
-    public Float getAngsuranTotal()
+    public Double getAngsuranTotal()
     {
         return angsuran_total;
     }
-    public void setAngsuranTotal(Float angsuran_total)
+    public void setAngsuranTotal(Double angsuran_total)
     {
         this.angsuran_total=angsuran_total;
     }
 
-    public TGL_REALISASI getTglRealisasi()
+    public String getOutstanding()
+    {
+        return OUTSTANDING;
+    }
+    public void setOutstanding(String outstanding)
+    {
+        this.OUTSTANDING=outstanding;
+    }
+
+    private TGL_REALISASI getTglRealisasi()
     {
         return tgl_realisasi;
     }
@@ -113,16 +137,16 @@ public class ListRekeningDebiturModel implements Parcelable{
         this.tgl_realisasi=tgl_realisasi;
     }
 
-    public TGL_JATUH_TEMPO getTglJthTempo()
+    private TGL_JATUH_TEMPO getTglJthTempo()
     {
         return tgl_jatuh_tempo;
     }
-    public void setTglJthTempo(TGL_JATUH_TEMPO tgl_jatuh_tempo)
+    private void setTglJthTempo(TGL_JATUH_TEMPO tgl_jatuh_tempo)
     {
         this.tgl_jatuh_tempo=tgl_jatuh_tempo;
     }
 
-    public TGL_LUNAS getTglLunas()
+    private TGL_LUNAS getTglLunas()
     {
         return tgl_lunas;
     }
@@ -173,7 +197,7 @@ public class ListRekeningDebiturModel implements Parcelable{
         @Expose
         private String dateRealisasi;
 
-        public String getDateRealisasi()
+        private String getDateRealisasi()
         {
             return dateRealisasi;
         }
@@ -190,7 +214,7 @@ public class ListRekeningDebiturModel implements Parcelable{
         @Expose
         private String dateLunas;
 
-        public String getLunas()
+        private String getLunas()
         {
             return dateLunas;
         }
@@ -207,7 +231,7 @@ public class ListRekeningDebiturModel implements Parcelable{
         @Expose
         private String dateJatuhTempo;
 
-        public String getJatuhTempo()
+        private String getJatuhTempo()
         {
             return dateJatuhTempo;
         }
@@ -258,9 +282,12 @@ public class ListRekeningDebiturModel implements Parcelable{
         NASABAH_ID = in.readString();
         NO_REKENING= in.readString();
         NO_ALTERNATIF= in.readString();
-        JML_PINJAMAN= in.readFloat();
+        JML_PINJAMAN= in.readString();
+        OUTSTANDING= in.readString();
+        POSISI_CICILAN_KE= in.readString();
         JML_ANGSURAN= in.readInt();
-        angsuran_total= in.readFloat();
+        angsuran_total= in.readDouble();
+        KOLEKTIBILITAS= in.readString();
     }
 
     public static final Parcelable.Creator<ListRekeningDebiturModel> CREATOR = new Parcelable.Creator<ListRekeningDebiturModel>() {
@@ -280,8 +307,11 @@ public class ListRekeningDebiturModel implements Parcelable{
         dest.writeString(NASABAH_ID);
         dest.writeString(NO_REKENING);
         dest.writeString(NO_ALTERNATIF);
-        dest.writeFloat(JML_PINJAMAN);
+        dest.writeString(JML_PINJAMAN);
+        dest.writeString(OUTSTANDING);
+        dest.writeString(POSISI_CICILAN_KE);
         dest.writeInt(JML_ANGSURAN);
-        dest.writeFloat(angsuran_total);
+        dest.writeDouble(angsuran_total);
+        dest.writeString(KOLEKTIBILITAS);
     }
 }

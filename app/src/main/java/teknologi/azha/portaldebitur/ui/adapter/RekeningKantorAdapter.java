@@ -72,6 +72,12 @@ public class RekeningKantorAdapter extends RecyclerView.Adapter<RekeningKantorAd
                     case 1:
                         Intent i = new Intent(view.getContext(), JadwalAngsuranActivity.class);
                         i.putExtra("norek", mdl.getNoRekening());
+                        i.putExtra("JmlPinjaman", mdl.getJmlPinjaman());
+                        i.putExtra("JmlAngsuran", String.valueOf(mdl.getJmlAngsuran()));
+                        i.putExtra("JmlOutstanding", mdl.getOutstanding());
+                        i.putExtra("getJmlCicilan", mdl.getPosisiCicilan());
+                        i.putExtra("TglJatuhTempo", mdl.getInnterTglJatuhTempo());
+                        i.putExtra("Kolektibilitas", mdl.getKolektibilitas());
                         view.getContext().startActivity(i);
 
                         break;
